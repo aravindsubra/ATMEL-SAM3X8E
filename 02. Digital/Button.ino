@@ -11,10 +11,10 @@ void loop()
   buttonstate = digitalRead(button);
   if(buttonstate == LOW)
   {
-    ledpin = LOW;
+    digitalWrite(ledpin, LOW);
   }
   else
   {
-    ledpin = HIGH;
+    digitalWrite(ledpin, HIGH);
   }
 }
