@@ -23,6 +23,7 @@ void loop()
     }
     lastbuttonstate = buttonstate;
   }
+  delay(1000);
   if(pushbuttoncount%4 == 0)
   {
     digitalWrite(13, HIGH);
