@@ -3,20 +3,18 @@ void setup() {
   while(!Serial) {
     ;
   }
-  Serial.print("ASCII Table ~ Character Map");
+  Serial.print("ASIITableMappingCharacters ~ ");
 }
 int thisByte = 33;
 void loop() {
   Serial.write(thisByte);
-  Serial.print(", dec : ");
-  Serial.print(thisByte);
-  Serial.print(", hex : ");
-  Serial.print(thisByte, HEX);
-  Serial.print(", oct : ");
+  Serial.print(" dec : ");
+  Serial.print(thisByte, DEC);
+  Serial.print(" oct : ");
   Serial.print(thisByte, OCT);
-  Serial.print(", bin : ");
+  Serial.print(" bin : ");
   Serial.print(thisByte, BIN);
-  if(thisByte == 126) {
+  if(thisByte == 126){
     while (true) {
       continue;
     }
