@@ -5,7 +5,7 @@ void setup() {
   pinMode(ledpin, OUTPUT);
 }
 void loop() {
-  if(Serial.Available() > 0) {
+  if(Serial.available() > 0) {
     incomingbyte = Serial.read();
     if(incomingbyte == 'H') {
       digitalWrite(ledpin, HIGH);
